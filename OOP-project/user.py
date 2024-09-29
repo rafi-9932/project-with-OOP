@@ -17,7 +17,7 @@ class Customer(User):  # Fixed class name to 'Customer'
 
     def add_to_cart(self, restaurant, item_name, quantity):
         item = restaurant.menu.find_item(item_name)
-        print(item.quantity)
+        #print(item.quantity)
         if item:
             if quantity > item.quantity:
                 print("Item quantity exceeded!")
